@@ -1,4 +1,4 @@
-# David Klein, 9/25/2015, Section: 8
+# David Klein, 9/25/2015
 
 # have user choose minimum and maximum
 # if not viable min or max, then end program
