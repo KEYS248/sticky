@@ -54,11 +54,11 @@ def game():
 			print("There are", total_sticks, "sticks left")
 		if total_sticks == 1 and player_turn % 2 == 1:
 			print("You pick up the last stick and lose :/\nBetter luck next time!")
-			play_again = input("Enter 'again' to play\n> ")
+			play_again = input("Enter 'again' to play or Enter 'quit' to exit\n> ")
 			break
 		elif total_sticks == 1 and player_turn % 2 == 0:
 			print("The computer picks up the last stick and loses! :D\nNice job! But could you do that again?")
-			play_again = input("Enter 'again' to play\n> ")
+			play_again = input("Enter 'again' to play or Enter 'quit' to exit\n> ")
 			break
 
 		# odd numbers for turn-variable indicate a user's turn
@@ -77,7 +77,7 @@ def game():
 				pick_up = int(input("How many sticks do you want to pick up (1 - 3)?\n> "))
 			if (total_sticks - pick_up) <= 0:
 				print("You pick up the last stick and lose :/\nBetter luck next time!")
-				play_again = input("Enter 'again' to play\n> ")
+				play_again = input("Enter 'again' to play or Enter 'quit' to exit\n> ")
 				break
 			total_sticks -= pick_up
 			if pick_up == 1:
